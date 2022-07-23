@@ -12,8 +12,6 @@ require("dotenv").config({ path: path.resolve(__dirname, '../../../../.env') })
 
 const app = express();
 
-console.log(process.env.MONGO_CONNECT)
-
 app.use(cors())
 
 mongoose.connect(process.env.MONGO_CONNECT)

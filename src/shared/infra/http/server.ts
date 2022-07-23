@@ -1,7 +1,7 @@
 import { app } from "./app";
+import * as path from 'path';
+require("dotenv").config({ path: path.resolve(__dirname, '../../../../.env') })
 
-const PORT = 3333
-
-app.listen(PORT, () => {
+app.listen(process.env.APP_URL, () => {
   console.log("Server started 🚀🚀")
 })
